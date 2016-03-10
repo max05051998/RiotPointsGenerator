@@ -11,3 +11,6 @@ C:\Users\maxst\Documents\Visual Studio 2015\Projects\AB120-02\AB120-02\obj\Debug
 C:\Users\maxst\Documents\Visual Studio 2015\Projects\AB120-02\AB120-02\obj\Debug\RiotPointsGenerator.csproj.GenerateResource.Cache
 C:\Users\maxst\Documents\Visual Studio 2015\Projects\AB120-02\AB120-02\bin\Debug\AB120-02.exe
 C:\Users\maxst\Documents\Visual Studio 2015\Projects\AB120-02\AB120-02\bin\Debug\AB120-02.pdb
+D:\Users\Max\Documents\Visual Studio 2015\Projects\RiotPointsGenerator\AB120-02\bin\Debug\AB120-02.exe.config
+D:\Users\Max\Documents\Visual Studio 2015\Projects\RiotPointsGenerator\AB120-02\obj\Debug\AB120-02.exe
+D:\Users\Max\Documents\Visual Studio 2015\Projects\RiotPointsGenerator\AB120-02\obj\Debug\AB120-02.pdb
