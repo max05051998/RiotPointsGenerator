@@ -43,5 +43,10 @@ namespace AB120_02
         {
             MessageBox.Show("Swag lord");
         }
+
+        private void usernamelogin_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

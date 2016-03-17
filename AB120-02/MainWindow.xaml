@@ -34,7 +34,7 @@
                 <DropShadowEffect ShadowDepth="0" BlurRadius="10" Opacity="50" Direction="-90"/>
             </TextBox.Effect>
         </TextBox>
-        <PasswordBox x:Name="passwortlogin" Height="24" Margin="161,213,160,0" VerticalAlignment="Top">
+        <PasswordBox x:Name="passwortlogin" HorizontalAlignment="Left" Height="24" Margin="161,213,0,0" VerticalAlignment="Top" Width="196" Background="White">
             <PasswordBox.Effect>
                 <DropShadowEffect ShadowDepth="0" BlurRadius="10" Direction="-90" Opacity="50"/>
             </PasswordBox.Effect>

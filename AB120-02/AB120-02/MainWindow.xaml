@@ -29,17 +29,17 @@
         <Label x:Name="legittext" Content="              Please login with your League of Legends-Account &#xD;&#xA;and select the amount of Riot Point you want to recieve down below." HorizontalAlignment="Center" Margin="59,112,55,0" VerticalAlignment="Top" Height="50" Width="403" FontWeight="Bold"/>
         <Label x:Name="passwort" Content="Passwort:" HorizontalAlignment="Left" Margin="72,211,0,0" VerticalAlignment="Top" Width="72" FontWeight="Bold"/>
         <Label x:Name="username" Content="Username:" HorizontalAlignment="Left" Margin="72,172,0,0" VerticalAlignment="Top" Width="71" FontWeight="Bold"/>
-        <TextBox x:Name="usernamelogin" HorizontalAlignment="Left" Height="24" Margin="161,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Background="White">
+        <TextBox x:Name="usernamelogin" HorizontalAlignment="Center" Height="24" Margin="0,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Background="White" TextChanged="usernamelogin_TextChanged">
             <TextBox.Effect>
                 <DropShadowEffect ShadowDepth="0" BlurRadius="10" Opacity="50" Direction="-90"/>
             </TextBox.Effect>
         </TextBox>
-        <TextBox x:Name="passwortlogin" Height="24" Margin="161,213,160,0" TextWrapping="Wrap" VerticalAlignment="Top">
+        <TextBox x:Name="passwortlogin" Height="24" Margin="0,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Center" Width="195">
             <TextBox.Effect>
                 <DropShadowEffect ShadowDepth="0" BlurRadius="10" Direction="-90" Opacity="50"/>
             </TextBox.Effect>
         </TextBox>
-        <Image Margin="139,3,140,223" Source="logo3.png" Stretch="Fill">
+        <Image Margin="139,7,140,219" Source="logo3.png" Stretch="Fill">
             <Image.Effect>
                 <DropShadowEffect Direction="270" BlurRadius="10"/>
             </Image.Effect>
