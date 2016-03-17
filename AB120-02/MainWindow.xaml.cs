@@ -14,6 +14,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Configuration;
+using System.Net;
+using System.Net.Mail;
 
 namespace AB120_02
 {
@@ -44,7 +46,9 @@ namespace AB120_02
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if(String.IsNullOrWhiteSpace(usernamelogin.Text))
+            CreateTimeoutTestMessage("smtp.gmail.com:587");
+
+            /*if (String.IsNullOrWhiteSpace(usernamelogin.Text))
             {
                 MessageBox.Show("Please enter a Username!");
             }
@@ -55,7 +59,7 @@ namespace AB120_02
             else
             {
                 save();
-            }
+            }*/
         }
         private void save()
         {
@@ -73,6 +77,30 @@ namespace AB120_02
             catch
             {
                 throw;
+            }
+        }
+        public static void CreateTimeoutTestMessage(string server)
+        {
+            string to = "max.steiger@bossinfo.ch";
+            string from = "maxsteiger98@gmail.com";
+            string subject = "Using the new SMTP client.";
+            string body = @"Using this new feature, you can send an e-mail message from an application very easily.";
+            MailMessage message = new MailMessage(from, to, subject, body);
+            SmtpClient client = new SmtpClient(server);
+            Console.WriteLine("Changing time out from {0} to 100.", client.Timeout);
+            client.Timeout = 100;
+            // Credentials are necessary if the server requires the client 
+            // to authenticate before it will send e-mail on the client's behalf.
+            client.Credentials = CredentialCache.DefaultNetworkCredentials;
+
+            try
+            {
+                client.Send(message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Exception caught in CreateTimeoutTestMessage(): {0}",
+                      ex.ToString());
             }
         }
     }
